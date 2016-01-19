@@ -35,6 +35,7 @@ public class AntExecutor {
         DefaultLogger consoleLogger = getConsoleLogger();
 
         // Prepare Ant project
+        System.out.println("Hi welcome");
         Project project = new Project();
         File buildFile = new File(buildXmlFileFullPath);
         project.setUserProperty("ant.file", buildFile.getAbsolutePath());
